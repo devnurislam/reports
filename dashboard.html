@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <button id="logout-button">Logout</button>
+        <form id="daily-data-form" class="form">
+            <h2>Submit Daily Data</h2>
+            <label for="salah">Salah:</label>
+            <input type="number" id="salah" min="0" required>
+            <label for="quran">Reciting Quran (Pages):</label>
+            <input type="number" id="quran" min="0" required>
+            
+            <!-- nija add kora -->
+           <label for="quran">study literature  (Pages):</label>
+           <input type="number" id="literature" min="0" required>
+            
+            <label>Did any good work:</label>
+            <input type="radio" id="good-yes" name="goodWork" value="yes" required> Yes 
+            <input type="radio" id="good-no" name="goodWork" value="no"> No<br>
+           
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="reports">
+            <h2>Daily Reports</h2>
+            <ul id="reports-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
